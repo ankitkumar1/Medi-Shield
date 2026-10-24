@@ -16,6 +16,7 @@ out/
 dist/
 
 data/raw/
+data/*.db
 data/dataset/
 *.png
 *.jpg
@@ -23,6 +24,7 @@ data/dataset/
 *.tif
 *.tiff
 *.pdf
+!data/policies/*.pdf
 
 .DS_Store
 .idea/

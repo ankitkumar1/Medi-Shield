@@ -1,0 +1,276 @@
+{
+  "documents": 20,
+  "classification_accuracy": 1.0,
+  "extraction_completeness": 0.9,
+  "policy_retrieval": 1.0,
+  "decision_correctness": 0.9,
+  "ui_functionality": 1.0,
+  "code_quality": 1.0,
+  "weighted_score": 0.955,
+  "rows": [
+    {
+      "doc_id": "unknown_bank_statement_001",
+      "expected_type": "UNKNOWN",
+      "predicted_type": "UNKNOWN",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 1448.1,
+      "justification": "Escalated for a reviewer because The page does not match a claim, identity, discharge, prescription, or amendment.."
+    },
+    {
+      "doc_id": "unknown_utility_bill_001",
+      "expected_type": "UNKNOWN",
+      "predicted_type": "UNKNOWN",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 1371.6,
+      "justification": "Escalated for a reviewer because The page does not match a claim, identity, discharge, prescription, or amendment.."
+    },
+    {
+      "doc_id": "id_PT_20745",
+      "expected_type": "ID_DOCUMENT",
+      "predicted_type": "ID_DOCUMENT",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 1820.1,
+      "justification": "Rejected because expired_id."
+    },
+    {
+      "doc_id": "id_PT_47353",
+      "expected_type": "ID_DOCUMENT",
+      "predicted_type": "ID_DOCUMENT",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 1443.2,
+      "justification": "Rejected because expired_id."
+    },
+    {
+      "doc_id": "id_PT_50538",
+      "expected_type": "ID_DOCUMENT",
+      "predicted_type": "ID_DOCUMENT",
+      "type_ok": true,
+      "expected_decision": "APPROVE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": true,
+      "blur": 1452.8,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "id_PT_57795",
+      "expected_type": "ID_DOCUMENT",
+      "predicted_type": "ID_DOCUMENT",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": false,
+      "blur": 1268.0,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "id_PT_39451",
+      "expected_type": "ID_DOCUMENT",
+      "predicted_type": "ID_DOCUMENT",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": false,
+      "blur": 1430.4,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "claim_PT_71993",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 3619.0,
+      "justification": "Rejected because procedure_not_covered."
+    },
+    {
+      "doc_id": "claim_PT_16658",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 2465.9,
+      "justification": "Rejected because procedure_not_covered."
+    },
+    {
+      "doc_id": "claim_PT_82132",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 2372.5,
+      "justification": "Rejected because npi, missing_marker_on_form."
+    },
+    {
+      "doc_id": "claim_PT_17665",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "REJECT",
+      "predicted_decision": "REJECT",
+      "decision_ok": true,
+      "blur": 2370.7,
+      "justification": "Rejected because npi, missing_marker_on_form."
+    },
+    {
+      "doc_id": "claim_PT_62350",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 2392.0,
+      "justification": "Escalated for a reviewer because proc_diag_mismatch."
+    },
+    {
+      "doc_id": "claim_PT_20322_dup",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 2785.5,
+      "justification": "Escalated for a reviewer because duplicate_claim."
+    },
+    {
+      "doc_id": "claim_PT_72021",
+      "expected_type": "CLAIM_FORM",
+      "predicted_type": "CLAIM_FORM",
+      "type_ok": true,
+      "expected_decision": "APPROVE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": true,
+      "blur": 2355.5,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "discharge_PT_19116",
+      "expected_type": "DISCHARGE_SUMMARY",
+      "predicted_type": "DISCHARGE_SUMMARY",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 2318.8,
+      "justification": "Escalated for a reviewer because readmission_30d."
+    },
+    {
+      "doc_id": "discharge_PT_72021",
+      "expected_type": "DISCHARGE_SUMMARY",
+      "predicted_type": "DISCHARGE_SUMMARY",
+      "type_ok": true,
+      "expected_decision": "APPROVE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": true,
+      "blur": 1387.9,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "rx_PT_99733",
+      "expected_type": "PRESCRIPTION",
+      "predicted_type": "PRESCRIPTION",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 1762.3,
+      "justification": "Escalated for a reviewer because date_conflict."
+    },
+    {
+      "doc_id": "rx_PT_39451",
+      "expected_type": "PRESCRIPTION",
+      "predicted_type": "PRESCRIPTION",
+      "type_ok": true,
+      "expected_decision": "ESCALATE",
+      "predicted_decision": "ESCALATE",
+      "decision_ok": true,
+      "blur": 450.8,
+      "justification": "Escalated for a reviewer because Matched PRESCRIPTION.."
+    },
+    {
+      "doc_id": "rx_PT_72021",
+      "expected_type": "PRESCRIPTION",
+      "predicted_type": "PRESCRIPTION",
+      "type_ok": true,
+      "expected_decision": "APPROVE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": true,
+      "blur": 1797.4,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    },
+    {
+      "doc_id": "amend_PT_72021",
+      "expected_type": "POLICY_AMENDMENT",
+      "predicted_type": "POLICY_AMENDMENT",
+      "type_ok": true,
+      "expected_decision": "APPROVE",
+      "predicted_decision": "APPROVE",
+      "decision_ok": true,
+      "blur": 1478.9,
+      "justification": "Approved. Identity, claim fields, coverage, and fraud score are within the auto-approve limits."
+    }
+  ],
+  "policy_notes": [
+    {
+      "doc_id": "claim_PT_71993",
+      "covered": false,
+      "clause": "MediShield Gold Plan -- Policy Document  |  MED-GLD-SERIES-2025 Page 8\n15820-15829 Blepharoplasty - Eyelid Surgery Cosmetic S4(a)\n17000-17999 Destruction of Benign Skin Lesions (co",
+      "expected_uncovered": true
+    },
+    {
+      "doc_id": "claim_PT_16658",
+      "covered": false,
+      "clause": "MediShield Gold Plan -- Policy Document  |  MED-GLD-SERIES-2025 Page 8\n15820-15829 Blepharoplasty - Eyelid Surgery Cosmetic S4(a)\n17000-17999 Destruction of Benign Skin Lesions (co",
+      "expected_uncovered": true
+    },
+    {
+      "doc_id": "claim_PT_82132",
+      "covered": true,
+      "clause": "medishield_gold_plan.pdf p.3: mum (Family) $15,000 $30,000\nPrimary Care Physician (PCP) Copay $25 / visit 40% coinsurance\nSpecialist Copay $60 / visit 40% coinsurance\nEmergency Roo",
+      "expected_uncovered": false
+    },
+    {
+      "doc_id": "claim_PT_17665",
+      "covered": true,
+      "clause": "medishield_gold_plan.pdf p.3: mum (Family) $15,000 $30,000\nPrimary Care Physician (PCP) Copay $25 / visit 40% coinsurance\nSpecialist Copay $60 / visit 40% coinsurance\nEmergency Roo",
+      "expected_uncovered": false
+    },
+    {
+      "doc_id": "claim_PT_62350",
+      "covered": true,
+      "clause": "medishield_gold_plan.pdf p.3: mum (Family) $15,000 $30,000\nPrimary Care Physician (PCP) Copay $25 / visit 40% coinsurance\nSpecialist Copay $60 / visit 40% coinsurance\nEmergency Roo",
+      "expected_uncovered": false
+    },
+    {
+      "doc_id": "claim_PT_20322_dup",
+      "covered": true,
+      "clause": "medishield_gold_plan.pdf p.3: mum (Family) $15,000 $30,000\nPrimary Care Physician (PCP) Copay $25 / visit 40% coinsurance\nSpecialist Copay $60 / visit 40% coinsurance\nEmergency Roo",
+      "expected_uncovered": false
+    },
+    {
+      "doc_id": "claim_PT_72021",
+      "covered": true,
+      "clause": "medishield_gold_plan.pdf p.3: mum (Family) $15,000 $30,000\nPrimary Care Physician (PCP) Copay $25 / visit 40% coinsurance\nSpecialist Copay $60 / visit 40% coinsurance\nEmergency Roo",
+      "expected_uncovered": false
+    }
+  ]
+}

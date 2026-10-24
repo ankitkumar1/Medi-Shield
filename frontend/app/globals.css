@@ -1,0 +1,65 @@
+:root {
+  --ink: #172033;
+  --muted: #5c6b80;
+  --line: #d9e0ea;
+  --bg: #f3f5f8;
+  --card: #ffffff;
+  --navy: #16325c;
+  --ok: #0f7a4a;
+  --bad: #a32626;
+  --wait: #8a5a00;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+a { color: inherit; }
+.shell { display: grid; grid-template-columns: 220px 1fr; min-height: 100vh; }
+.nav {
+  background: var(--navy);
+  color: white;
+  padding: 28px 20px;
+}
+.nav h1 { font-size: 20px; margin: 0 0 6px; }
+.nav p { margin: 0 0 28px; color: #c5d4ea; font-size: 13px; }
+.nav a { display: block; padding: 10px 12px; border-radius: 8px; text-decoration: none; margin-bottom: 6px; }
+.nav a.active, .nav a:hover { background: rgba(255,255,255,0.12); }
+.main { padding: 28px 32px 48px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+th { color: var(--muted); font-weight: 600; }
+.badge { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 650; }
+.APPROVED, .APPROVE { background: #e5f6ee; color: var(--ok); }
+.REJECTED, .REJECT { background: #fdecec; color: var(--bad); }
+.ESCALATED, .ESCALATE { background: #fff4d8; color: var(--wait); }
+.PROCESSING, .RECEIVED { background: #e8eef7; color: var(--navy); }
+.detail { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; align-items: start; }
+.doc { width: 100%; background: #111; border-radius: 12px; }
+.panel { padding: 16px 18px; }
+.panel h2 { margin: 0 0 8px; font-size: 18px; }
+.muted { color: var(--muted); }
+label { display: block; font-size: 13px; margin: 12px 0 6px; }
+select, textarea, button { font: inherit; }
+select, textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; }
+button {
+  margin-top: 12px;
+  background: var(--navy);
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 14px;
+  cursor: pointer;
+}
+details { border-top: 1px solid var(--line); padding: 8px 0; }
+summary { cursor: pointer; font-weight: 650; }
+pre { white-space: pre-wrap; font-size: 12px; background: #f7f9fc; padding: 10px; border-radius: 8px; }
+.audit { list-style: none; padding: 0; margin: 0; }
+.audit li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+@media (max-width: 900px) {
+  .shell { grid-template-columns: 1fr; }
+  .detail { grid-template-columns: 1fr; }
+}
